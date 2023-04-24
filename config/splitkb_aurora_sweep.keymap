@@ -6,35 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
-ZMK_UNICODE_PAIR(   a_umlaut,            N0, N0,  E, N4,    N0, N0,  C, N4)
-ZMK_UNICODE_PAIR(   a_accent,            N0, N0,  E, N1,    N0, N0,  C, N1)
-ZMK_UNICODE_PAIR(   a_grave_accent,      N0, N0,  E, N0,    N0, N0,  C, N0)
-ZMK_UNICODE_PAIR(   a_caret,             N0, N0,  E, N2,    N0, N0,  C, N2)
-
-ZMK_UNICODE_PAIR(   e_umlaut,            N0, N0,  E,  B,    N0, N0,  C,  B)
-ZMK_UNICODE_PAIR(   e_accent,            N0, N0,  E,  N9,   N0, N0,  C,  N9)
-ZMK_UNICODE_PAIR(   e_grave_accent,      N0, N0,  E,  N8,   N0, N0,  C,  N8)
-ZMK_UNICODE_PAIR(   e_caret,             N0, N0,  E,  A,    N0, N0,  C,  A)
-
-ZMK_UNICODE_PAIR(   i_umlaut,            N0, N0,  E, F,    N0, N0,  C, F)
-ZMK_UNICODE_PAIR(   i_accent,            N0, N0,  E, D,    N0, N0,  C, D)
-ZMK_UNICODE_PAIR(   i_grave_accent,      N0, N0,  E, C,    N0, N0,  C, C)
-ZMK_UNICODE_PAIR(   i_caret,             N0, N0,  E, E,    N0, N0,  C, E)
-
-ZMK_UNICODE_PAIR(   o_umlaut,            N0, N0,  F, N6,    N0, N0,  D, N6)
-ZMK_UNICODE_PAIR(   o_accent,            N0, N0,  F, N3,    N0, N0,  D, N3)
-ZMK_UNICODE_PAIR(   o_grave_accent,      N0, N0,  F, N2,    N0, N0,  D, N2)
-ZMK_UNICODE_PAIR(   o_caret,             N0, N0,  F, N4,    N0, N0,  D, N4)
-
-ZMK_UNICODE_PAIR(   u_umlaut,            N0, N0,  F,  C,    N0, N0,  D,  C)
-ZMK_UNICODE_PAIR(   u_accent,            N0, N0,  F,  A,    N0, N0,  D,  A)
-ZMK_UNICODE_PAIR(   u_grave_accent,      N0, N0,  F,  N9,   N0, N0,  D,  N9)
-ZMK_UNICODE_PAIR(   u_caret,             N0, N0,  F,  B,    N0, N0,  D,  B)
-
-ZMK_UNICODE_PAIR(   es_n,      N0, N0,  F,  1,    N0, N0,  D,  1)
-ZMK_UNICODE_SINGLE( es_question_mark,  N0, N0,  B,  F)
-ZMK_UNICODE_SINGLE( eszett,  N0, N0,  D,  F)
+#include "../international_characters/config.dtsi"
 
 # Layers
 #define DEFAULT 0
