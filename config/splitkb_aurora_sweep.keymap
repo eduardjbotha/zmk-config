@@ -102,10 +102,10 @@
 
         layer_3 {
             bindings = <
-&trans      &trans          &kp &td_e  &trans  &trans    &trans     &kp &td_u   &kp &td_i  &kp &td_o  &trans
-&kp &td_a   &kp &de_eszett  &trans     &trans  &trans    &trans     &trans      &trans     &trans     &trans
-&trans      &trans          &trans     &trans  &trans    &kp &es_n  &trans      &trans     &trans     &kp &es_question_mark
-                                       &trans  &trans    &trans     &trans
+&trans  &trans      &td_e   &trans  &trans    &trans  &td_u   &td_i   &td_o   &trans
+&td_a   &de_eszett  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans    &es_n   &trans  &trans  &trans  &es_question_mark
+                            &trans  &trans    &trans  &trans
             >;
         };
 
