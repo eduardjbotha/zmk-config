@@ -7,12 +7,84 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+ZMK_UNICODE_PAIR(   a_umlaut,            N0, N0,  E, N4,    N0, N0,  C, N4)
+ZMK_UNICODE_PAIR(   a_accent,            N0, N0,  E, N1,    N0, N0,  C, N1)
+ZMK_UNICODE_PAIR(   a_grave_accent,      N0, N0,  E, N0,    N0, N0,  C, N0)
+ZMK_UNICODE_PAIR(   a_caret,             N0, N0,  E, N2,    N0, N0,  C, N2)
+
+ZMK_UNICODE_PAIR(   e_umlaut,            N0, N0,  E,  B,    N0, N0,  C,  B)
+ZMK_UNICODE_PAIR(   e_accent,            N0, N0,  E,  N9,   N0, N0,  C,  N9)
+ZMK_UNICODE_PAIR(   e_grave_accent,      N0, N0,  E,  N8,   N0, N0,  C,  N8)
+ZMK_UNICODE_PAIR(   e_caret,             N0, N0,  E,  A,    N0, N0,  C,  A)
+
+ZMK_UNICODE_PAIR(   i_umlaut,            N0, N0,  E, F,    N0, N0,  C, F)
+ZMK_UNICODE_PAIR(   i_accent,            N0, N0,  E, D,    N0, N0,  C, D)
+ZMK_UNICODE_PAIR(   i_grave_accent,      N0, N0,  E, C,    N0, N0,  C, C)
+ZMK_UNICODE_PAIR(   i_caret,             N0, N0,  E, E,    N0, N0,  C, E)
+
+ZMK_UNICODE_PAIR(   o_umlaut,            N0, N0,  F, N6,    N0, N0,  D, N6)
+ZMK_UNICODE_PAIR(   o_accent,            N0, N0,  F, N3,    N0, N0,  D, N3)
+ZMK_UNICODE_PAIR(   o_grave_accent,      N0, N0,  F, N2,    N0, N0,  D, N2)
+ZMK_UNICODE_PAIR(   o_caret,             N0, N0,  F, N4,    N0, N0,  D, N4)
+
+ZMK_UNICODE_PAIR(   u_umlaut,            N0, N0,  F,  C,    N0, N0,  D,  C)
+ZMK_UNICODE_PAIR(   u_accent,            N0, N0,  F,  A,    N0, N0,  D,  A)
+ZMK_UNICODE_PAIR(   u_grave_accent,      N0, N0,  F,  N9,   N0, N0,  D,  N9)
+ZMK_UNICODE_PAIR(   u_caret,             N0, N0,  F,  B,    N0, N0,  D,  B)
+
+ZMK_UNICODE_PAIR(   es_n,      N0, N0,  F,  1,    N0, N0,  D,  1)
+ZMK_UNICODE_SINGLE( es_question_mark,  N0, N0,  B,  F)
+ZMK_UNICODE_SINGLE( eszett,  N0, N0,  D,  F)
+
+# Layers
+#define DEFAULT 0
+#define LAYER1 1
+#define LAYER2 2
+#define LAYER3 3
+
 &mt {
     //  flavor = "tap-preferred";
     // tapping_term_ms = <200>;
 };
 
 / {
+    behaviors {
+        td_a: tap_dance_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp &a_umlaut>, <&kp &a_accent>, <&kp &a_grave_accent>, <&kp &a_caret>;
+        };
+        td_e: tap_dance_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_d";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp &e_umlaut>, <&kp &e_accent>, <&kp &e_grave_accent>, <&kp &e_caret>;
+        };
+        td_i: tap_dance_i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_I";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp &i_umlaut>, <&kp &i_accent>, <&kp &i_grave_accent>, <&kp &i_caret>;
+        };
+        td_o: tap_dance_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp &o_umlaut>, <&kp &o_accent>, <&kp &o_grave_accent>, <&kp &o_caret>;
+        };
+        td_u: tap_dance_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_U";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp &u_umlaut>, <&kp &u_accent>, <&kp &u_grave_accent>, <&kp &u_caret>;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
@@ -28,37 +100,37 @@
 
         default_layer {
             bindings = <
-     &kp Q           &kp W        &kp E             &kp R      &kp T              &kp Y              &kp U        &kp I            &kp O                    &kp P
-&mt LWIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F      &kp G              &kp H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON
-     &kp Z           &kp X        &kp C             &kp V      &kp B              &kp N              &kp M    &kp COMMA          &kp DOT                &kp SLASH
-                                              &lt 2 ENTER  &lt 1 TAB    &lt 2 BACKSPACE        &lt 2 SPACE
+&kp Q           &kp W            &kp E       &kp R             &kp T              &kp Y          &kp U              &kp I        &kp O            &kp P
+&mt LWIN A      &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G              &kp H          &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON
+&kp Z           &kp X            &kp C       &kp V             &kp B              &kp N          &kp M              &kp COMMA    &kp DOT          &kp SLASH
+                                             &lt LAYER2 ENTER  &lt LAYER3 TAB     &kp BACKSPACE  &lt LAYER1 SPACE
             >;
         };
 
         layer_1 {
             bindings = <
- &kp EXCL          &kp AT          &kp POUND      &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp MINUS      &kp MINUS  &kp UNDERSCORE        &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp TILDE          &trans             &trans          &trans           &trans       &trans       &kp PIPE   &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-                                                      &trans           &trans       &trans         &trans
+&kp EXCL   &kp AT          &kp POUND          &kp DOLLAR      &kp PERCENT        &kp CARET   &kp AMPERSAND  &kp STAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp MINUS   &kp MINUS      &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp TILDE  &trans          &trans             &trans          &trans             &trans      &kp PIPE       &kp BACKSLASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+                                              &trans          &trans             &trans      &trans
             >;
         };
 
         layer_2 {
             bindings = <
-         &kp F1           &kp F2        &kp F3             &kp F4            &trans               &kp PRINTSCREEN              &kp HOME                 &kp END                  &kp PG_UP             &kp PG_DN
-&mt LEFT_GUI F5  &mt LEFT_ALT F6  &mt LCTRL F7  &mt LEFT_SHIFT F8            &trans    &mt RIGHT_SHIFT LEFT_ARROW  &mt RCTRL DOWN_ARROW  &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI RIGHT_ARROW                &trans
-         &kp F9          &kp F10       &kp F11            &kp F12            &trans                    &kp C_MUTE     &kp C_VOLUME_DOWN         &kp C_VOLUME_UP       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-                                                           &trans  &kp C_PLAY_PAUSE                    &kp C_NEXT        &kp C_PREVIOUS
+&kp F1           &kp F2           &kp F3        &kp F4             &trans             &kp PRINTSCREEN             &kp HOME              &kp END                 &kp PG_UP                  &kp PG_DN
+&mt LEFT_GUI F5  &mt LEFT_ALT F6  &mt LCTRL F7  &mt LEFT_SHIFT F8  &trans             &mt RIGHT_SHIFT LEFT_ARROW  &mt RCTRL DOWN_ARROW  &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI RIGHT_ARROW  &trans
+&kp F9           &kp F10          &kp F11       &kp F12            &trans             &kp C_MUTE                  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP         &kp C_BRIGHTNESS_DEC       &kp C_BRIGHTNESS_INC
+                                                &trans             &kp C_PLAY_PAUSE   &kp C_NEXT                  &kp C_PREVIOUS
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&trans      &trans          &kp &td_e  &trans  &trans    &trans     &kp &td_u   &kp &td_i  &kp &td_o  &trans
+&kp &td_a   &kp &de_eszett  &trans     &trans  &trans    &trans     &trans      &trans     &trans     &trans
+&trans      &trans          &trans     &trans  &trans    &kp &es_n  &trans      &trans     &trans     &kp &es_question_mark
+                                       &trans  &trans    &trans     &trans
             >;
         };
     };
