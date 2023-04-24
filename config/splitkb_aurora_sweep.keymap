@@ -9,7 +9,7 @@
 #include "../helper.h"
 #include "../international_characters/config.dtsi"
 
-# Layers
+// Layers
 #define DEFAULT 0
 #define LAYER1 1
 #define LAYER2 2
