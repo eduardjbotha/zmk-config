@@ -26,4 +26,4 @@ ZMK_UNICODE_PAIR(   u_caret,             N0, N0,  F,  B,    N0, N0,  D,  B)
 
 ZMK_UNICODE_PAIR(   es_n,      N0, N0,  F,  1,    N0, N0,  D,  1)
 ZMK_UNICODE_SINGLE( es_question_mark,  N0, N0,  B,  F)
-ZMK_UNICODE_SINGLE( eszett,  N0, N0,  D,  F)
+ZMK_UNICODE_SINGLE( de_eszett,  N0, N0,  D,  F)
