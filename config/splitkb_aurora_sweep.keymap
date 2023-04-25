@@ -29,35 +29,35 @@
             label = "TAP_DANCE_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp &a_umlaut>, <&kp &a_accent>, <&kp &a_grave_accent>, <&kp &a_caret>;
+            bindings = <&a_umlaut>, <&a_accent>, <&a_grave_accent>, <&a_caret>;
         };
         td_e: tap_dance_e {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_d";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp &e_umlaut>, <&kp &e_accent>, <&kp &e_grave_accent>, <&kp &e_caret>;
+            bindings = <&e_umlaut>, <&e_accent>, <&e_grave_accent>, <&e_caret>;
         };
         td_i: tap_dance_i {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_I";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp &i_umlaut>, <&kp &i_accent>, <&kp &i_grave_accent>, <&kp &i_caret>;
+            bindings = <&i_umlaut>, <&i_accent>, <&i_grave_accent>, <&i_caret>;
         };
         td_o: tap_dance_o {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_O";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp &o_umlaut>, <&kp &o_accent>, <&kp &o_grave_accent>, <&kp &o_caret>;
+            bindings = <&o_umlaut>, <&o_accent>, <&o_grave_accent>, <&o_caret>;
         };
         td_u: tap_dance_u {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_U";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp &u_umlaut>, <&kp &u_accent>, <&kp &u_grave_accent>, <&kp &u_caret>;
+            bindings = <&u_umlaut>, <&u_accent>, <&u_grave_accent>, <&u_caret>;
         };
     };
     combos {
@@ -76,7 +76,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W            &kp E       &kp R             &kp T              &kp Y                 &kp U              &kp I        &kp O            &kp P
-&mt LWIN A      &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G              &kp H                 &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON
+&mt LWIN A      &mt LEFT_ALT S   &mt LCTRL D &mt LEFT_SHIFT F  &kp G              &kp H                 &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMICOLON
 &kp Z           &kp X            &kp C       &kp V             &kp B              &kp N                 &kp M              &kp COMMA    &kp DOT          &kp SLASH
                                              &lt LAYER2 ENTER  &lt LAYER3 TAB     &lt LAYER4 BACKSPACE  &lt LAYER1 SPACE
             >;
