@@ -7,7 +7,7 @@
 #define HOST_OS 1
 
 #include "../helper.h"
-#include "../international_characters/config.dtsi"
+// #include "../international_characters/config.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -116,13 +116,13 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-&trans  &trans      &td_e   &trans  &trans    &trans  &td_u   &td_i   &td_o   &trans
-&td_a   &de_eszett  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans  &trans  &trans    &es_n   &trans  &trans  &trans  &es_question_mark
-                            &trans  &trans    &trans  &trans
-            >;
-        };
+//         layer_4 {
+//             bindings = <
+// &trans  &trans      &td_e   &trans  &trans    &trans  &td_u   &td_i   &td_o   &trans
+// &td_a   &de_eszett  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+// &trans  &trans      &trans  &trans  &trans    &es_n   &trans  &trans  &trans  &es_question_mark
+//                             &trans  &trans    &trans  &trans
+//             >;
+//         };
     };
 };
