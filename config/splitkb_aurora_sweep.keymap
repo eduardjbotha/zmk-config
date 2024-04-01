@@ -25,47 +25,47 @@
 };
 
 / {
-    behaviors {
-        td_a: tap_dance_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&a_umlaut>, <&a_accent>, <&a_grave_accent>, <&a_caret>;
-        };
-
-        td_e: tap_dance_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_d";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&e_umlaut>, <&e_accent>, <&e_grave_accent>, <&e_caret>;
-        };
-
-        td_i: tap_dance_i {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_I";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&i_umlaut>, <&i_accent>, <&i_grave_accent>, <&i_caret>;
-        };
-
-        td_o: tap_dance_o {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_O";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&o_umlaut>, <&o_accent>, <&o_grave_accent>, <&o_caret>;
-        };
-
-        td_u: tap_dance_u {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_U";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&u_umlaut>, <&u_accent>, <&u_grave_accent>, <&u_caret>;
-        };
-    };
+    //behaviors {
+    //    td_a: tap_dance_a {
+    //        compatible = "zmk,behavior-tap-dance";
+    //        label = "TAP_DANCE_A";
+    //        #binding-cells = <0>;
+    //        tapping-term-ms = <200>;
+    //        bindings = <&a_umlaut>, <&a_accent>, <&a_grave_accent>, <&a_caret>;
+    //    };
+//
+    //    td_e: tap_dance_e {
+    //        compatible = "zmk,behavior-tap-dance";
+    //        label = "TAP_DANCE_d";
+    //        #binding-cells = <0>;
+    //        tapping-term-ms = <200>;
+    //        bindings = <&e_umlaut>, <&e_accent>, <&e_grave_accent>, <&e_caret>;
+    //    };
+//
+    //    td_i: tap_dance_i {
+    //        compatible = "zmk,behavior-tap-dance";
+    //        label = "TAP_DANCE_I";
+    //        #binding-cells = <0>;
+    //        tapping-term-ms = <200>;
+    //        bindings = <&i_umlaut>, <&i_accent>, <&i_grave_accent>, <&i_caret>;
+    //    };
+//
+    //    td_o: tap_dance_o {
+    //        compatible = "zmk,behavior-tap-dance";
+    //        label = "TAP_DANCE_O";
+    //        #binding-cells = <0>;
+    //        tapping-term-ms = <200>;
+    //        bindings = <&o_umlaut>, <&o_accent>, <&o_grave_accent>, <&o_caret>;
+    //    };
+//
+    //    td_u: tap_dance_u {
+    //        compatible = "zmk,behavior-tap-dance";
+    //        label = "TAP_DANCE_U";
+    //        #binding-cells = <0>;
+    //        tapping-term-ms = <200>;
+    //        bindings = <&u_umlaut>, <&u_accent>, <&u_grave_accent>, <&u_caret>;
+    //    };
+    //};
 
     combos {
         compatible = "zmk,combos";
