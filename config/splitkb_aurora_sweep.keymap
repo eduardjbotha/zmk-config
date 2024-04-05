@@ -91,10 +91,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCL   &kp AT          &kp POUND          &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp TAB        &kp ESCAPE     &kp MINUS  &kp MINUS      &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp TILDE  &trans          &trans             &trans         &kp DEL        &trans     &kp PIPE       &kp BACKSLASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-                                              &to DEFAULT    &to LAYER2     &trans     &to LAYER3
+&kp EXCL   &kp AT          &kp POUND          &kp DOLLAR     &kp PERCENT    &kp CARET       &kp AMPERSAND     &kp STAR              &kp MINUS              &kp BACKSPACE
+&kp GRAVE  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp TAB        &kp ESCAPE     &kp UNDERSCORE  &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
+&kp TILDE  &trans          &trans             &trans         &kp DEL        &kp PIPE        &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET
+                                              &to DEFAULT    &to LAYER2     &trans          &to LAYER3
             >;
         };
 
