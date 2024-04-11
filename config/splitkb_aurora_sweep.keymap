@@ -20,8 +20,8 @@
 #define LAYER4 4
 
 &mt {
-    //  flavor = "tap-preferred";
-    // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / {
