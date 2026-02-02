@@ -51,7 +51,7 @@
             bindings = <
 &kp NUMBER_1                 &kp NUMBER_2        &kp NUMBER_3     &kp NUMBER_4           &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7         &kp NUMBER_8      &kp NUMBER_9                 &kp NUMBER_0
 &mt LEFT_SHIFT EXCLAMATION   &mt LCTRL AT_SIGN   &mt LGUI HASH    &mt LALT DOLLAR        &kp PERCENT     &kp CARET         &mt RALT AMPERSAND   &mt RGUI ASTRK    &mt RCTRL LEFT_PARENTHESIS   &mt LEFT_SHIFT RIGHT_PARENTHESIS
-&kp F1                       &kp F2              &kp F3           &kp F4                 &kp F5          &kp GRAVE         &kp APOSTROPHE       &kp MINUS         &kp KP_EQUAL                 &kp BACKSLASH
+&kp F1                       &kp F2              &kp F3           &kp F4                 &kp F5          &kp GRAVE         &kp APOSTROPHE       &kp MINUS         &kp EQUAL                    &kp BACKSLASH
                                                                   &kp RIGHT_BRACKET      &trans          &lt LAYER3 TAB    &kp DELETE
             >;
         };
